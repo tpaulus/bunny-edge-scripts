@@ -15,18 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - uses: denoland/setup-deno@v2
         with:
-          node-version: '22'
+          deno-version: v2.x
 
-      - uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Install
-        run: "curl -fsSL https://deno.land/install.sh | sh -s v1.0.0 && deno install --frozen"
+      - name: Cache dependencies
+        run: deno cache --frozen script.ts
 
       - name: Build
         run: "deno task build"
