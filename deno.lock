@@ -1,0 +1,33 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@bunny.net/edgescript-sdk@0.12.1": "0.12.1"
+  },
+  "npm": {
+    "@bunny.net/edgescript-sdk@0.12.1": {
+      "integrity": "sha512-+B+AUnfA+9y6PlyX6BNL2Uk8x3vExRIKKP+rH0r4UnEWRiJZsbuEnZg5Au6pglf67NumP8tOwbrqP9jS4e+jDQ==",
+      "dependencies": [
+        "@hono/node-server",
+        "hono"
+      ]
+    },
+    "@hono/node-server@1.19.17_hono@4.13.7": {
+      "integrity": "sha512-dSneS5qhiauZWGDCeK4o695Xd9nUNjviSZCMQrj10eetr8Uln1ucn6bbphOM6UynAMMtNIzZNSpL9vnASJwrPQ==",
+      "dependencies": [
+        "hono"
+      ]
+    },
+    "hono@4.13.7": {
+      "integrity": "sha512-c8/gF9ac8Y78/agExVocyLevgR+JlpNB444Py0FSX8pJoPdYUfUzRcXtYEYGwt6l19qIlVZPN5Mfsw9jFShmQQ=="
+    }
+  },
+  "remote": {
+    "https://raw.githubusercontent.com/zimme/bunny-edge-scripts/cefcba3e7a4d01d610b2261163f3dc587bb3315d/packages/bunny-ddns-edge-script/src/app.js": "6c3fff4fa434cd662a347b91ab5e43bee0d91a56c378ae4fd93089d78de6648e",
+    "https://raw.githubusercontent.com/zimme/bunny-edge-scripts/cefcba3e7a4d01d610b2261163f3dc587bb3315d/packages/bunny-ddns-edge-script/src/mod.ts": "3303075e5aff0e8f0553018da5a7257c29b6ff2ab9aece459eaaa0b426bdb18c"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@bunny.net/edgescript-sdk@0.12.1"
+    ]
+  }
+}
