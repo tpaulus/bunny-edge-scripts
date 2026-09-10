@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@bunny.net/edgescript-sdk": "npm:@bunny.net/edgescript-sdk@0.12.1",
+    "@zimme/bunny-ddns-edge-script": "https://raw.githubusercontent.com/zimme/bunny-edge-scripts/cefcba3e7a4d01d610b2261163f3dc587bb3315d/packages/bunny-ddns-edge-script/src/mod.ts"
+  },
+  "tasks": {
+    "check": "deno check script.ts",
+    "build": "mkdir -p generated && deno bundle --external @bunny.net/edgescript-sdk -o generated/script.ts script.ts"
+  }
+}
